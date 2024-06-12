@@ -1,0 +1,277 @@
+<%- include("partials/header"); -%>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media Page - Farming Website</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/css/media.css">
+<!-- 	
+	<link rel="stylesheet" href="/css/navbar.css"> -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media Page - Farming Website</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Custom CSS -->
+	<style>
+        body{
+            background-image: url("https://africanarguments.org/wp-content/uploads/2022/08/large-scale-agriculture-africa-e1661514970812.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+		.container {
+			margin-top: 50px;
+           
+		}
+		.card {
+			margin-bottom: 30px;
+			transition: transform .2s;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+           
+		}
+
+        
+		.card:hover {
+			transform: scale(1.05);
+		}
+		.card-img-overlay {
+			background: rgba(0,0,0,0.6);
+			color: white;
+			transition: opacity .2s;
+			opacity: 0;
+		}
+		.card:hover .card-img-overlay {
+			opacity: 1;
+		}
+        h1{
+            text-align: center;
+            color: green;
+            font-weight: bolder;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        .heading{
+            background-color: lightgreen;
+            margin-top: -20px;
+           
+        }
+        
+       
+
+	</style>
+</head>
+<body>
+
+    <%- include("partials/navbar"); -%>
+	<!-- <div class="container">
+        
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://media.istockphoto.com/id/1007817460/photo/harvester-harvests-wheat-on-field.jpg?s=612x612&w=0&k=20&c=i_rRq_gO6YZbXIS3tDioMLFW1BMP6HKnQuHTFIHnraE=" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">COMBINE HARVESTER</h5>
+						<p class="card-text">A combine harvester is a farming machine that combines the processes of cutting, threshing, and cleaning grains in a single pass.<br>ਕੰਬਾਈਨ ਹਾਰਵੈਸਟਰ ਇੱਕ ਖੇਤੀਬਾੜੀ ਮਸ਼ੀਨ ਹੈ ਜੋ ਅੱਖਾਂ, ਥ੍ਰੈਸਿੰਗ ਅਤੇ ਅਫ਼ਵਾਹੀ ਦੇ ਪ੍ਰਕਿਰਿਆਵਾਂ ਨੂੰ ਇੱਕਠੇ ਕਰਦੀ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+				<div class="card">
+					<img src="/img/tractor.jpg" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">TRACTOR</h5>
+						<p class="card-text">A tractor is a powerful vehicle designed to tow or pull heavy machinery, typically used in agriculture and construction.<br>ਟਰੈਕਟਰ ਇੱਕ ਤਾਕਤਵਰ ਵਾਹਨ ਹੈ ਜੋ ਭਾਰੀ ਯੰਤਰਾਂ ਨੂੰ ਖਿੱਚਣ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ, ਹਾਲਾਂਕਿ ਇਸਨੂੰ ਕਿਸਾਨੀ ਅਤੇ ਨਿਰਮਾਣ ਵਿਦਿਆਲਿਆਂ ਵਿੱਚ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+				<div class="card">
+					<img src="https://static.everypixel.com/ep-pixabay/1745/3385/4359/90002/17453385435990002253-agriculture.jpg" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">WAGON</h5>
+						<p class="card-text">Wagon transports crops and equipment, boosts farm productivity.<br><br>ਖੇਤੀ ਵਿੱਚ ਵੈਗਨ ਫਸਲ ਅਤੇ ਸਮੱਗਰੀ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਜਿਸਨੂੰ ਫਾਰਮ ਉਤਪਾਦਕਤਾ ਵਧਾਉਂਦਾ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+				<div class="card">
+					<img src="https://qph.cf2.quoracdn.net/main-qimg-aa08de59472abf0f9f8b39582c4bf16c.webp" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">MIXED CROPPING</h5>
+						<p class="card-text">Growing two or more crops simultaneously on the same field.<br><br>ਇੱਕ ਹੀ ਖੇਤ ਵਿੱਚ ਦੋ ਜਾਂ ਵਧੇਰੇ ਫਸਲਾਂ ਸਮਾਣ ਸਮੇਂ ਉਗਾਉਣਾ।</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+				<div class="card">
+					<img src="https://panorama.solutions/sites/default/files/091.jpg" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">INTER CROPPING</h5>
+						<p class="card-text">Growing two or more crops together in a single field.<br><br>ਇੱਕ ਹੀ ਖੇਤ ਵਿੱਚ ਦੋ ਜਾਂ ਵਧੇਰੇ ਫਸਲਾਂ ਉਗਾਉਣਾ।</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+				<div class="card">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIUDl5doK_qxnqR-g7RIOdn372PNPtTBQJVvXBFIxh1jCjgf8_s4b3SYApYFnTY0KAIos&usqp=CAU" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">CROP ROTATION</h5>
+						<p class="card-text">Rotate crops each season, soil health thrives, yields increase, pests decline.<br><br>ਹਰ ਮੌਸਮ ਵਿੱਚ ਫਸਲ ਘੁੰਮਾਓ, ਮਿੱਟੀ ਤਾਂ ਸਿਹਤ ਵਧਦੀਆਂ, ਪਾਈਆਂ ਘਟਦੇ ਜਾਂਦੇ ਹਨ।</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+				<div class="card">
+					<img src="https://media.istockphoto.com/id/1250506247/photo/fertilization-and-the-role-of-nutrients-in-plant-life-soil-with-digital-mineral-nutrients-icon.jpg?s=612x612&w=0&k=20&c=NEqNKB8SVHyF5jf8y-pds0ms8TJRDSYGAHwXsFsg2FY=" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">NITROGEN FERTILIZERS</h5>
+						<p class="card-text">Boosts plant growth, improves yield, enhances green foliage and photosynthesis.<br><br>ਨਾਇਟ੍ਰੋਜਨ ਖਾਦ ਵਰਤਣ ਨਾਲ ਪੌਧੇ ਦਾ ਵਿਕਾਸ ਹੁੰਦਾ ਹੈ, ਫਸਲ ਦੀ ਉਤਪਾਦਕਤਾ ਵਧਦੀ ਹੈ, ਪੌਧੇ ਦੇ ਹਰੇ ਭਾਗ ਅਤੇ ਫੋਟੋਸਿਨਥੈਸਿਸ ਨੂੰ ਸੁਧਾਰਦਾ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://media.istockphoto.com/id/856189046/photo/chemical-fertilizer-or-organic-fertilizer.jpg?s=612x612&w=0&k=20&c=36MDszSNBVc5nPcXsjpNEIe53H-HV982jiVL5DDwa-g=" class="card-img-top" alt="Harvesting">
+					<div class="card-img-overlay">
+						<h5 class="card-title">PHOSPHORUS FERTILIZERS</h5>
+						<p class="card-text">Promotes root growth, enhances flowering and fruiting, improves seed quality.<br><br>ਜੜਾਂ ਦਾ ਵਿਕਾਸ ਬ੝ਢਾਉਂਦਾ ਹੈ, ਫੂਲਾਂ ਅਤੇ ਫਲਾਂ ਦੀ ਵਧਿਆਈ ਹੁੰਦੀ ਹੈ, ਬੀਜ ਦੀ ਗੁਣਵੱਤਾ ਸੁਧਾਰਦਾ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://media.istockphoto.com/id/1072349326/photo/fertilizer-in-farmer-hand-npk-fertilizers-are-three-component-fertilizers-providing-nitrogen.jpg?s=612x612&w=0&k=20&c=oJ_NFh2BbbHXxjSUF5BhxEjhqYQatgXVnnpHh9gTLo4=" class="card-img-top" alt="Livestock">
+					<div class="card-img-overlay">
+						<h5 class="card-title">POTASSIUM FERTILIZERS</h5>
+						<p class="card-text">Improves plant vigor and stress tolerance, enhances fruit quality.<br><br>ਪੌਧੇ ਦੀ ਤਾਕਤ ਅਤੇ ਤਣਾਅ ਝੇਲਣ ਵਿੱਚ ਸੁਧਾਰ ਕਰਦਾ ਹੈ, ਫਲਾਂ ਦੀ ਗੁਣਵੱਤਾ ਵਧਾਉਂਦਾ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<div class="container">
+        <div class="heading">
+        <h1>WELCOME TO OUR WEBSITE</h1>
+        </div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://media.istockphoto.com/id/1007817460/photo/harvester-harvests-wheat-on-field.jpg?s=612x612&w=0&k=20&c=i_rRq_gO6YZbXIS3tDioMLFW1BMP6HKnQuHTFIHnraE=" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">COMBINE HARVESTER</h5>
+						<p class="card-text">A combine harvester is a farming machine that combines the processes of cutting, threshing, and cleaning grains in a single pass.<br>ਕੰਬਾਈਨ ਹਾਰਵੈਸਟਰ ਇੱਕ ਖੇਤੀਬਾੜੀ ਮਸ਼ੀਨ ਹੈ ਜੋ ਅੱਖਾਂ, ਥ੍ਰੈਸਿੰਗ ਅਤੇ ਅਫ਼ਵਾਹੀ ਦੇ ਪ੍ਰਕਿਰਿਆਵਾਂ ਨੂੰ ਇੱਕਠੇ ਕਰਦੀ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+				<div class="card">
+					<img src="/img/tractor.jpg" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">TRACTOR</h5>
+						<p class="card-text">A tractor is a powerful vehicle designed to tow or pull heavy machinery, typically used in agriculture and construction.<br>ਟਰੈਕਟਰ ਇੱਕ ਤਾਕਤਵਰ ਵਾਹਨ ਹੈ ਜੋ ਭਾਰੀ ਯੰਤਰਾਂ ਨੂੰ ਖਿੱਚਣ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ, ਹਾਲਾਂਕਿ ਇਸਨੂੰ ਕਿਸਾਨੀ ਅਤੇ ਨਿਰਮਾਣ ਵਿਦਿਆਲਿਆਂ ਵਿੱਚ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+				<div class="card">
+					<img src="https://static.everypixel.com/ep-pixabay/1745/3385/4359/90002/17453385435990002253-agriculture.jpg" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">WAGON</h5>
+						<p class="card-text">Wagon transports crops and equipment, boosts farm productivity.<br><br>ਖੇਤੀ ਵਿੱਚ ਵੈਗਨ ਫਸਲ ਅਤੇ ਸਮੱਗਰੀ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਜਿਸਨੂੰ ਫਾਰਮ ਉਤਪਾਦਕਤਾ ਵਧਾਉਂਦਾ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+				<div class="card">
+					<img src="https://qph.cf2.quoracdn.net/main-qimg-aa08de59472abf0f9f8b39582c4bf16c.webp" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">MIXED CROPPING</h5>
+						<p class="card-text">Growing two or more crops simultaneously on the same field.<br><br>ਇੱਕ ਹੀ ਖੇਤ ਵਿੱਚ ਦੋ ਜਾਂ ਵਧੇਰੇ ਫਸਲਾਂ ਸਮਾਣ ਸਮੇਂ ਉਗਾਉਣਾ।</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+				<div class="card">
+					<img src="https://panorama.solutions/sites/default/files/091.jpg" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">INTER CROPPING</h5>
+						<p class="card-text">Growing two or more crops together in a single field.<br><br>ਇੱਕ ਹੀ ਖੇਤ ਵਿੱਚ ਦੋ ਜਾਂ ਵਧੇਰੇ ਫਸਲਾਂ ਉਗਾਉਣਾ।</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+				<div class="card">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIUDl5doK_qxnqR-g7RIOdn372PNPtTBQJVvXBFIxh1jCjgf8_s4b3SYApYFnTY0KAIos&usqp=CAU" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">CROP ROTATION</h5>
+						<p class="card-text">Rotate crops each season, soil health thrives, yields increase, pests decline.<br><br>ਹਰ ਮੌਸਮ ਵਿੱਚ ਫਸਲ ਘੁੰਮਾਓ, ਮਿੱਟੀ ਤਾਂ ਸਿਹਤ ਵਧਦੀਆਂ, ਪਾਈਆਂ ਘਟਦੇ ਜਾਂਦੇ ਹਨ।</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+				<div class="card">
+					<img src="https://media.istockphoto.com/id/1250506247/photo/fertilization-and-the-role-of-nutrients-in-plant-life-soil-with-digital-mineral-nutrients-icon.jpg?s=612x612&w=0&k=20&c=NEqNKB8SVHyF5jf8y-pds0ms8TJRDSYGAHwXsFsg2FY=" class="card-img-top" alt="Tractor">
+					<div class="card-img-overlay">
+						<h5 class="card-title">NITROGEN FERTILIZERS</h5>
+						<p class="card-text">Boosts plant growth, improves yield, enhances green foliage and photosynthesis.<br><br>ਨਾਇਟ੍ਰੋਜਨ ਖਾਦ ਵਰਤਣ ਨਾਲ ਪੌਧੇ ਦਾ ਵਿਕਾਸ ਹੁੰਦਾ ਹੈ, ਫਸਲ ਦੀ ਉਤਪਾਦਕਤਾ ਵਧਦੀ ਹੈ, ਪੌਧੇ ਦੇ ਹਰੇ ਭਾਗ ਅਤੇ ਫੋਟੋਸਿਨਥੈਸਿਸ ਨੂੰ ਸੁਧਾਰਦਾ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://media.istockphoto.com/id/856189046/photo/chemical-fertilizer-or-organic-fertilizer.jpg?s=612x612&w=0&k=20&c=36MDszSNBVc5nPcXsjpNEIe53H-HV982jiVL5DDwa-g=" class="card-img-top" alt="Harvesting">
+					<div class="card-img-overlay">
+						<h5 class="card-title">PHOSPHORUS FERTILIZERS</h5>
+						<p class="card-text">Promotes root growth, enhances flowering and fruiting, improves seed quality.<br><br>ਜੜਾਂ ਦਾ ਵਿਕਾਸ ਬ੝ਢਾਉਂਦਾ ਹੈ, ਫੂਲਾਂ ਅਤੇ ਫਲਾਂ ਦੀ ਵਧਿਆਈ ਹੁੰਦੀ ਹੈ, ਬੀਜ ਦੀ ਗੁਣਵੱਤਾ ਸੁਧਾਰਦਾ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://media.istockphoto.com/id/1072349326/photo/fertilizer-in-farmer-hand-npk-fertilizers-are-three-component-fertilizers-providing-nitrogen.jpg?s=612x612&w=0&k=20&c=oJ_NFh2BbbHXxjSUF5BhxEjhqYQatgXVnnpHh9gTLo4=" class="card-img-top" alt="Livestock">
+					<div class="card-img-overlay">
+						<h5 class="card-title">POTASSIUM FERTILIZERS</h5>
+						<p class="card-text">Improves plant vigor and stress tolerance, enhances fruit quality.<br><br>ਪੌਧੇ ਦੀ ਤਾਕਤ ਅਤੇ ਤਣਾਅ ਝੇਲਣ ਵਿੱਚ ਸੁਧਾਰ ਕਰਦਾ ਹੈ, ਫਲਾਂ ਦੀ ਗੁਣਵੱਤਾ ਵਧਾਉਂਦਾ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://www.geo.fu-berlin.de/en/v/iwrm/Implementation/technical_measures/bilder/Bilder-irrigation/Furrow-irrigation-_titel2_.jpg?width=500" class="card-img-top" alt="Livestock">
+					<div class="card-img-overlay">
+						<h5 class="card-title">SURFACE IRRIGATION</h5>
+						<p class="card-text">Water flows across fields, nurturing crops with surface irrigation.<br><br>ਪਾਣੀ ਖੇਤਰਾਂ 'ਚ ਬਹਿ ਜਾਂਦਾ ਹੈ, ਸ੍ਰੋਤ ਕਿਰਸ਼ੀ ਫਸਲਾਂ ਨੂੰ ਤਰੱਕੀ ਦਿੰਦਾ ਹੈ।</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://mazeros.com/wp-content/uploads/2022/04/sprinkler-agricultural-irrigation.jpg" class="card-img-top" alt="Livestock">
+					<div class="card-img-overlay">
+						<h5 class="card-title">SPRINKLER IRRIGATION</h5>
+						<p class="card-text">Sprinklers shower water, quenching crops with efficient irrigation technology.<br><br>ਸਪ੍ਰਿੰਕਲਰ ਪਾਣੀ ਛੱਡਦੇ ਹਨ, ਕਿਸਾਨਾਂ ਨੂੰ ਤਰੱਕੀ ਦੇ ਨਾਲ ਤੱਕਤਵਰ ਸਿੰਚਾਈ ਦੇ ਨਾਲ ਭਰ ਦੇਂਦੇ ਹਨ।</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6Fm7Q-1gOO-_5W2XMQSULf2kequuRikmtA&usqp=CAU" class="card-img-top" alt="Livestock">
+					<div class="card-img-overlay">
+						<h5 class="card-title">DRIP IRRIGATION</h5>
+						<p class="card-text">Drip feeds water, conserving crops with precise irrigation technique.<br><br>ਟਿੱਪਣੀ ਨਾਲ ਪਾਣੀ ਪ੍ਰਦਾਨ ਕਰਦੀ ਹੈ, ਪੁਆਦਾਂ ਦੀ ਸੰਭਾਲ ਕਰਦੀ ਹੈ ਨਿਹਾਲ ਕਿਸਾਨੀ ਵਿਧੀ ਨਾਲ।</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		
+</body>
+</html>

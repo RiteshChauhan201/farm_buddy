@@ -1,0 +1,46 @@
+body{
+    background-image: url("https://www.shutterstock.com/image-photo/seedlings-corn-growing-fertile-soil-260nw-1117964792.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.container {
+    
+    /* margin-top: 50px; */
+    padding-top: 150px;
+   
+}
+.card {
+    margin-bottom: 30px;
+    transition: transform .2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+.card-img-overlay {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    transition: opacity .2s;
+    opacity: 0;
+}
+.card:hover .card-img-overlay {
+    opacity: 1;
+}
+/* h1{
+    text-align: center;
+    color: green;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    padding-top: 20px;
+} */
+.heading{
+    background-color: lightgreen;
+    margin-top: -20px;
+   
+}

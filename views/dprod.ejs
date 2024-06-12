@@ -1,0 +1,154 @@
+<%- include("partials/header"); -%>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  form {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background: #36d167;
+    background-image: -webkit-linear-gradient(top, #36d167, #3291d1);
+    background-image: -moz-linear-gradient(top, #36d167, #3291d1);
+    background-image: -ms-linear-gradient(top, #36d167, #3291d1);
+    background-image: -o-linear-gradient(top, #36d167, #3291d1);
+    background-image: linear-gradient(to bottom, #36d167, #3291d1);
+    border-radius: 10%;
+    box-shadow: 0 0 10px green;
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="file"] {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    display: block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* li {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  } */
+
+  li img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 10px;
+    border-radius: 50%;
+  }
+
+  p {
+    text-align: center;
+  }
+  .prod{
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+
+  }
+  .prod-li{
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-direction: row; */
+    align-items: center;
+    font-size: xx-large;
+    background: #36d167;
+    background-image: -webkit-linear-gradient(top, #36d167, #3291d1);
+    background-image: -moz-linear-gradient(top, #36d167, #3291d1);
+    background-image: -ms-linear-gradient(top, #36d167, #3291d1);
+    background-image: -o-linear-gradient(top, #36d167, #3291d1);
+    background-image: linear-gradient(to bottom, #36d167, #3291d1);
+    border-radius: 10%;
+    box-shadow: 0 0 10px green;
+    /* height: fit-content; */
+    min-width: 700px;
+    align-self: center;
+  }
+</style>
+</head>
+<body>
+    <%- include("partials/dealernavbar"); -%>
+    
+  
+    <h1>Welcome <%= user.name %>!</h1>
+    <p>Upload your product:</p>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <label for="name">Name:</label>
+      <input type="text" name="name" required><br>
+      <label for="price">Price:</label>
+      <input type="number" name="price" required><br>
+      <label for="image">Image:</label>
+      <input type="file" name="image" required><br>
+      <button type="submit">Upload</button>
+    </form>
+
+    <hr>
+
+    <% if (products.length > 0) { %>
+      <div class="prod">
+      <h2>Your Products:</h2>
+      <ul>
+        <% products.forEach(product => { %>
+          
+          <li class="prod-li">
+            <p><%= product.name %> - </p>
+            <p>Rs. <%= product.price %></p>
+            <% if (product.image) { %>
+              <img src="/uploads/<%= product.image %>" alt="<%= product.name %>">
+            <% } %>
+          </li>
+        <% }) %>
+      </ul>
+    </div>
+    <% } else { %>
+      <p>You haven't uploaded any products yet.</p>
+    <% } %>
+  </body>
+</html>
